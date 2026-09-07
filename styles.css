@@ -175,7 +175,25 @@ body.menu-open { overflow: hidden; }
 .cta-panel h2 { font-size: clamp(2rem, 3vw, 3rem); max-width: 560px; }
 .cta-panel .button { margin-top: 10px; }
 
+.resources h2, .faq h2 { font-size: clamp(2.5rem, 4vw, 4.4rem); letter-spacing: -.06em; line-height: 1.02; margin-top: 18px; }
+.resource-grid { display: grid; gap: 20px; grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 42px; }
+.resource-card { background: #ebe5da; display: flex; flex-direction: column; gap: 12px; padding: 26px 22px; }
+.resource-card span { color: var(--muted); font-family: var(--mono); font-size: 10px; letter-spacing: .06em; text-transform: uppercase; }
+.resource-card h3 { font-size: 1.6rem; letter-spacing: -.04em; margin: 0; }
+.resource-card p { color: var(--muted); line-height: 1.7; margin: 0; }
+.resource-card a { align-items: center; display: inline-flex; gap: 8px; margin-top: auto; font-weight: 700; }
+.faq-list-block { display: grid; gap: 14px; margin-top: 32px; }
+.faq-list-block details { background: #ebe5da; border: 1px solid var(--line); padding: 18px 20px; }
+.faq-list-block summary { cursor: pointer; font-size: 1.05rem; font-weight: 700; letter-spacing: -.03em; list-style: none; }
+.faq-list-block summary::-webkit-details-marker { display: none; }
+.faq-list-block p { color: var(--muted); line-height: 1.7; margin: 12px 0 0; }
+
 .approach { background: #ebe5da; }.contact-panel { box-shadow: 10px 10px 0 #ebe5da; }
+
+@media (max-width: 800px) {
+  .resource-grid { grid-template-columns: 1fr; }
+  .cta-panel { align-items: flex-start; flex-direction: column; }
+}
 
 @media (max-width: 800px) {
 	.hero { padding-left: 24px; padding-right: 24px; }
