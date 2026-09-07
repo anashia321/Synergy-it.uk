@@ -90,6 +90,13 @@ h1 em, h2 span, .statement h2 span, .approach h2 span, .contact h2 em { color: v
 .mobile-menu-cta { margin-top: auto; padding-top: 28px !important; }
 body.menu-open { overflow: hidden; }
 
+.enquiry-form { display: grid; gap: 9px; }
+.enquiry-form label { color: var(--muted); font-family: var(--mono); font-size: 10px; letter-spacing: .05em; text-transform: uppercase; }
+.enquiry-form input, .enquiry-form textarea { background: transparent; border: 0; border-bottom: 1px solid var(--line); border-radius: 0; color: var(--ink); font: inherit; margin-bottom: 10px; outline: 0; padding: 7px 0; width: 100%; }
+.enquiry-form input:focus, .enquiry-form textarea:focus { border-color: var(--ink); }
+.enquiry-form textarea { min-height: 110px; resize: vertical; }
+.form-submit { cursor: pointer; margin-top: 10px; width: 100%; }
+
 @media (max-width: 800px) {
 	.menu-toggle { display: inline-flex; }
 }
